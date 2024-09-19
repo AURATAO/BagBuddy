@@ -1,0 +1,54 @@
+@layer base{
+    .big-btn-primary{
+        padding: 16px 32px;
+        background: #219EBC;
+        color: white;
+        border-radius: 100px;
+        line-height: 1.5;
+        font-size: 24px;
+        font-weight: 600;
+        text-wrap: nowrap;
+        
+        
+      }
+      .big-btn-secondary{
+        padding: 16px 32px;
+        color: #219EBC;
+        background: white;
+        border-radius: 100px;
+        line-height: 1.5;
+        font-size: 24px;
+        border: 2px solid #219EBC;
+        font-weight: 600;
+        text-wrap: nowrap;
+        
+    
+      }
+      .sm-btn-primary{
+        padding: 12px 24px;
+        background: #219EBC;
+        color: white;
+        line-height: 1.5;
+        font-size: 16px;
+        border-radius: 100px;
+        font-weight: 600;
+        text-wrap: nowrap;
+        
+      }
+      .sm-btn-secondary{
+        padding: 12px 24px;
+        color: #219EBC;
+        background: white;
+        line-height: 1.5;
+        font-size: 24px;
+        border-radius: 100px;
+        border: 2px solid #219EBC;
+        font-weight: 600;
+        
+      }
+      .card{
+        background-color: white;
+        border-radius: 32px;
+        box-shadow: 0px 8px 24px rgba(33, 158, 188, 0.24);
+      }
+}

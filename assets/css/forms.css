@@ -1,0 +1,20 @@
+@layer base{
+    form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      input[type="date"] {
+        appearance: none;
+        border: 1px solid #ECECEC;
+        border-radius: 100px;
+      }
+      
+      select {
+        appearance: none;
+        padding: 8px 16px;
+        border-radius: 100px;
+        border: 1px solid #ECECEC;
+      }
+}
+

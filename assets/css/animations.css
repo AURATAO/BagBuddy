@@ -1,0 +1,38 @@
+/*try to modified */
+@layer base{
+
+    .back{
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+      }
+    
+      .front{
+        backface-visibility: hidden;
+      }
+    
+      .locationCard:hover .cardContainer{
+        transform: rotateY(180deg);
+        perspective: 1000px
+      }
+    
+    
+      .locationCard{
+        transition: transform 0.9s;
+        
+      }
+    
+      .cardContainer{
+        transform-style: preserve-3d;
+      }
+
+    .flatpickr-calendar {
+        display: none; /* Hide if you don't want the default one */
+      }
+      
+      /* Custom icon for the Flatpickr input field */
+      .flatpickr-input {
+        background: url('/assets/images/icon/Vector.png') no-repeat right 10px center;
+        background-size: 16px 16px;
+        padding-right: 40px; /* Space for the icon */
+      }
+}

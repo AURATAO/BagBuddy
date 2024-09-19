@@ -1,0 +1,66 @@
+@layer base{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    line-height: 1.3;
+  }
+
+  p{
+    line-height: 1.5;
+  }
+
+  .bigHead{
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .lHead{
+    font-size: 56px;
+    font-weight: bold;
+  }
+
+  h1{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 32px;
+    font-weight: bold;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h4{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h5{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h6{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .body1{
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .body2{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .body3{
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .body4{
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+}
