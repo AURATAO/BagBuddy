@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>index</title>
+    <script type="module" crossorigin src="/bagbuddy/assets/main-040f93d2.js"></script>
+    <link rel="stylesheet" href="/bagbuddy/assets/main-c0e3a7e7.css">
+  </head>
+  <body class="bg-mobile bg-cover bg-no-repeat w-full sm:bg-desktop">
+    <div class="w-full">
+      <!--header-->
+      <!--header-->
+<header class="m-auto container">
+  <div class="flex justify-between items-center mx-3 py-4 lg:gap-44">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAjCAYAAADR20XfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAApUSURBVHgB7V29c9NaFj9yMlkGGJ5KutW+gvY5FXQ4QHbIbBHvUDID9r6GGQpISxO7oQ1uoHoT+w9g4m328RXs19HFoWVYRMNA9bzAzLIQW/s78pX3+upKvrblEHv1m1FkXd17pHt1zrnn40qxaEJ4vy4UsLtOFmXJI5s8r0WWVbHWOlVKkWLGYdGY8HZsm4592sHPXATlOv27U7T+Sm1KkWJGsUhjwBeOP3xu4Gc2uhLl6dgChKNTJAM42w070+0WuplM3S2uuJQixRFAhkZEXzgsLxtf0WrRl84GGeMg61neluV1GxAWh1KkOAIYSUBGEo7/HKyweQVmz/64vbtFQ+AWV5seUQ2NHSEkNqVI8Z1hbGKNKxzM7B55NoTE/mfxYqy5lbGsN57nMREHf1hAUv9lxnHhwoUty7IGeKbT6RSbzaZLIyJJWqYwEpBJhAOF/kwAxi9ASChKSHBuE3VKom7Z/dtwPySXy2UzmcwtMsNb1G0+e/asSTMEMMUmds6weuhbu9vt7i8tLTUfPXrk0hEBMzSeZ44SQJK0TDFUQJIQjn6VCCEJCcfPqyUyufnFRRtMUSBDoO4mGM4FE60cJSaKA5giZ8IU6Ju///r1KwtV6fnz52VKMTFifZAkhaNftSck28HxuMIxARwwUePy5csOzS9KEJLblGJiRArINISj30QIyXcQjgDOt2/f5p2BNvP5fBromBBaE2uawtFvCiGRficpHBWYG/fEb5vNMNDfwpZVrr+OnVZILl26lAON6/iZg4nDgYI26tdgtlT5PLTzttJkH+fuTZtWAND7U/Ab/XNwzH1TI4X2x48f89hX+eDixYt50WeZTlnn4Or8nlOnTm3U6/W2rn/YrbMZiM1GH11sLdxXZVQzdlxabA3AKthUy2FKl6Pa6fq4sLBQefr0aUsuCwnIYQjHAJmEZ44zZ8788ODBg7ZgRh9w5lfgxP6uVHXUtjzQmFm2wTg56f76ZHhQ2X/BwyjI7XCtJnb3pkVLRcDUoOdQbyVDEwJQwT4yYCEUREEuA+MhrE6uWlfn97TbbfZpBgSEo0ro323lOg635X7hnoxnaR4P0CpF0cL5SJ+KhQDXctR7Rru32JXU+kKg1PI2nlfoGgMm1qwLB+PcuXMF7PZYAwVlYChfc8v1WDPJx2LQGkMcYr8ODUGStIaghI01YQPm1Lp6UlYSSUNo4DgB4Jm7qs7cMbRKcbSwbcXRQl91AqRVGBj3nKa4rptN+wLyHYRjY4o+h0PSDAHtwgOlRtQGBATawyicalInSVom+Pz5M7148cJRil3kCFo0BYChCxTP0DLsw6AlwveqQrCF2aYiZI6xuamp1zOxDl84ukX35z9XaQp48uQJ7e/v08uXL7cgGFxkazSPiwHpL4MRGr+g0jp58iRduXKFarUah6W5nyxoDsUgihb1Hh6bQa4prSigX/7Mc+PGjezx48fp9evXvpAoqEwrgQZtfV0yF2VUsf2GzRZ1hs4eSdKi3vgOML/w/5rB8erqahaKw1HuoRk1Vj0fZE6Eg/H+/Xt/I/0qY59J2YkXZpcPMHReU9e9c+dO5ezZs1vXrl1rssMIX6YOX4aZ06EIREzfLJAr8kMwoRWFwHR79epV6Bw/bDY3ppUQFQogpzlVDAIP4h5b9+/fbzx8+HAcWhtKoOLe3bt336BPDsWAnyvGVJ0dYH3m+wEG1AmZXRw0iaKZ8d/nmBPhMABro3U4pwP9Rdl5Td0yhMMRv3P8RzB4bAKO6etoqRqKj1F3hMWcZhCadp2mBJiPIV5hoZSFIwAUiz8Lj0ErFKS4efNmLC2GUHp1pZijeYXgQOMXurp7D5DBHQ1bqlGbMeFwhRYNttbgfXhZaJGGYpuG+oM63O4ncZiVypsUjyhaIYzrIyj9a9Kg7c2rC24HZljSkIMfUtlvurrM0KdPn6YkaCHMHEsrAGaQiloWKC0OdVN4xo5VeIsUb9vVrLVOgX/M0MxR293dLckFMGcc1ZwBE21j6l3WxfZFG38nDuUZZpzIUHvE8ligfytqGZxd1rp9Zceakh3gOO14GDhx4gQlBRNabFpCEJryTMG/OWn66dOn0Mw6TOFhBol8SLMoHDytb2JA9kSOwIcwb1TN4sCxDZRDaAzevXvH7VfE1jeFVPNMgxAtTubpKhrQMoaaQ2CwcxvXRqfBxwGuE0nnw4cPNCL+OCkt9OvvahmEY0tOTgtUhwUyMuSRbpqfSeGQwIynOt4608fhPQburXoOkaFbihlDou4wpnurKduMqBtLaxTIQQeJviMd6hRhTi1gxzkuYoRsc0tzneu6tW2PHz8OAibGtIC8jtbOzk4sLRl4rlVS+qsRjsjQrowMLWRUR3HWhSNAf4DEgIeYMUikwfxSHTt/WsZUvR08LJ6iOXOsG2gZSdIyRUBPLZcThbgvHWPfkhc1Mh04zkwn8nmLpRihfAMnPQO/julcvXr1PKJYFAdTWpzHqlarDhlCKItKXJ240O5APf4jvkzCa4JmSjjEOqcBZ5QdQ7ZVMR27UrGja89rmoJBYqfWG/NdAx5s2S84BFqucmyTnqmr8EH8VwvgU9kQkjcR9YKVBlF0BsaKl9OTJtlmimnRkiH6+3tM06KJf+Zn0v1P9HQ7y/Mwc3DCTNiqDikZdQUD9mfEUoWxgOhU4uFbBY6yaZleNiGGaFU7hk4IYjGoSwkgSVoyuL+yaazANQ1e9JeaWH/p+SIzblYZgQdOzqQzRGKtaNB8aB08nFZStMZEW01MMsAUJfS9FtdQ9bl0YOZj+jSEsflah0lL0yZK6cWaXzLC74P4q0/nUjhcbJy9XmETRufUslbhKVuXWeWHw21NNU+StAzRFjmfsjA7tDkW9L1APcF0lVN8vKELIevAwofrLNP/ls8M3Avfh7jWodKSEbWaANeqkyEsXaHzy+5ty/L6Th+vuqXMQdUtrrn++e1necuztsTHFWZm5hgFbMNyGPbg4IAfkKsTqElp6exk1QeZJvj6JMyqSddt8fcB+N0b9NE9KrTEQkj1fZu+X2YCK+qELwRIPHnkld+cXkMJQpW9z4vi4XpVa61b/vGXp6Uuee68CcckEEyfl8tw7Oq0mS7IQCM+wBTRQIBjTw1Z80wVNbvqYA2r4P1jIY9aO5pTTTj1h6LpZgkR0ZP20tLSsvx2m8jsNjQ5h+L3zn7PA3TKZ5zZefhnfzLWJumXI+e8Xxdz1tpBk1L0weaTutSBerH9PZTXOZEIAfpBvA7rqO0N1nqlMIAuCRu3ajcKsQLi7fhfa8/GVMmRtNY+RQ8c5oUQ7CnFdpAYDD7Ro0F5Uvs9ReQ7Oe44M3PsZ3/SL7OPhxHCvH1wGJPDsJRiYog3OlUYR65kmHybtxl96qBKKbQIwrzqcnsNxg5jpghDrCUrqOV4Fsa5DxkGnx7lf1+woHnzzSpba8lnQOcJwlxaFp9IzeH3TxAYfoDB0o59Xlg3SQg5xSC+fPnSxlgPzN68Jm1c03VoFIvh+yLHEM2izHn4JP/if46TOucp/h/wX4qmgbZR36D4AAAAAElFTkSuQmCC" alt="bagbuddy-logo" class="w-40" />
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVHgB1dJBEYBADEPRlFkBSKg0nDAYaSVgBQcUIy3FQjjtu+Se+WJmNwAFJ4aIHJmp4ATmJ+5+9q7gXEtVPeAp5veduP0JafSJe9eo4MQLCOkaZdKY6AwAAAAASUVORK5CYII="
+      alt="menu-icon"
+      class="lg:hidden"
+    />
+    <div class="hidden lg:flex">
+      <ul class="flex justify-center items-center gap-8">
+        <li class="body2 text-darkgray-3 text-center hover:text-primary-6">
+          <a href="#">Pre-made Pack List</a>
+        </li>
+        <li class="body2 text-darkgray-3 text-center hover:text-primary-6">
+          <a href="#">Getaway Ideas</a>
+        </li>
+        <li class="body2 text-darkgray-3 text-center hover:text-primary-6">
+          <a href="#">Custom Travel Kit</a>
+        </li>
+      </ul>
+    </div>
+    <div class="hidden flex justify-center items-center gap-4 lg:flex">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKeSURBVHgBtVRBctpAEJxZkVzDDyxcucf+gSggV+MXBMEDIC8AXmB4gCP7BbbPNgU/CDwgaJ/A3WYnPVoJZEwlh8RbparV7nRv7/TMEv3nwccWw2QeGnJ9IYnSuHl+msyG5Byve60R5onGODJjG9ftXwkBuBKRgc6NcLw1ZsHi5kRSFQ5qRC9nLDzPwMyjddwYl/GmpKpaS57mBRnC7a9e40aVgizEQtW4l4GNWwvMlxqB2BEwPxX7hhDAKxKKdtLFTT2I2sWaMPf9njzsJAmdZdhDQudoVZbujCw+J49Rrq4Y1RBrzlTuX8U6t3pFeJo89W2vMfE5YouljY2/Lp1wmw4G8tqGGXrlDRxYAHNue62JcmT7qgLXmhTupd1GTVgu/b3p5JBQcsXCro4KqGNqgb1TDlVvChVIcEfdzEqEKlbX1nHzEsBzHFD333Mt7bZy1R+UaAhMCmy7UI+PvpTOD9U5uNnJUnH9OArIhBXM9QvoY3R6PfMlBcc1VsuprL5CfxhwdYir0L5cpZhOjgKYPxmETHMj/nHwRpw8GBs374WNJvd2R2z4JD/RHkHaXH24IxIZg6Ombhvt28C5KO02O95hjp2Tlb+oLN8K8YQo7qXG5kSjClpSubKM1H7M0kyY0Fh7t2h631LPUMJ54mWj7mJ/U+wb5zpi5AKSQxXEfmOGkpGkpGIhFMSYbQLaRpwRqSVc3VKwwLTKtL3Ttisg+pD43tekxI0byXKYD/S0lo4qcULJFq+LfqjZK13DXrtMhlfnRsky4r2qYABlu5whPxd5rqZ7IN37PdMv3wZv4/f978EIUcw4ceiBAvcrS5ZtmrmZVYOLivRoydluc1DGm0NCdcw/EnRryHzTK6pKEXerZiGffaiYaswh2buM31pdcyRZjpy/AAAAAElFTkSuQmCC"
+        alt="global-icon"
+        class="w-6 h-6"
+      />
+      <a href="#" class="body3 text-darkgray-3">Login</a>
+      <button class="sm-btn-primary hover:bg-primary-5">Sign up</button>
+    </div>
+  </div>
+</header>
+      <!--Slogan-->
+      <main class="container w-full m-auto">
+        <div
+          class="flex flex-col justify-center items-center py-8 mx-3 sm:flex-row sm:justify-center gap-4"
+        >
+          <div
+            class="flex flex-col justify-center items-center pb-12 w-full lg:items-start"
+          >
+            <h2 class="text-center pb-6 lg:bigHead lg:text-start">
+              BagBuddy, Your Packing Pal!
+            </h2>
+            <button class="sm-btn-primary hover:bg-primary-5">
+              Create Your Own Pack List
+            </button>
+          </div>
+          <img
+            src="/bagbuddy/assets/Hero Image-48718368.png"
+            alt="image"
+            class="w-full sm:w-1/2"
+          />
+        </div>
+        <!--pre-made pack list -->
+        <section class="m-auto text-center py-8">
+          <div class="md:flex md:justify-between md:items-center md:gap-10">
+            <img
+              src="/bagbuddy/assets/PackList-f4ab0f65.png"
+              alt="packlist"
+              class="hidden md:flex md:w-1/2"
+            />
+            <div
+              class="text-center flex flex-col justify-center md:text-left md:justify-start"
+            >
+              <h2 class="text-darkgray-5 pb-2">
+                Ready-Made Lists for Hassle-Free Packing!
+              </h2>
+              <p class="darkgray-3 pb-6 mx-3">
+                Download ready-made packing lists for different types of trips
+                as PDF. Log in for a personalized packing experience and create
+                your own custom lists!
+              </p>
+              <img
+                src="/bagbuddy/assets/PackList-f4ab0f65.png"
+                alt="packlist"
+                class="md:hidden"
+              />
+              <div class="flex justify-center md:justify-start md:lHead">
+                <button
+                  class="sm-btn-primary flex justify-between items-center gap-3 hover:bg-primary-5"
+                >
+                  Get The Pack List
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABFSURBVHgBhYuJCQAgDAMdwVEdoZt0NEdwhNgiSsFYA4E+dwVALZ8cxoZu1QRU69iLYEUfoEfi8RIoyIQUJEIOBqF52W8C2rhtZZGY6IoAAAAASUVORK5CYII="
+                    alt="arrow-icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--travel idea-->
+        <section class="text-center">
+          <div class="mx-3 pb-10">
+            <h2 class="pb-2">Inspiration for future getaways</h2>
+            <p>
+              Discover ideal travel destinations based on current weather
+              trends. Our smart analysis, powered by weather data, suggests the
+              best spots for your next adventure. Plus, each recommendation
+              comes with a ready-made packing list to ensure you're perfectly
+              prepared!
+            </p>
+          </div>
+
+          <div class="pt-6 overflow-x-hidden ms-3 lg:hidden">
+            <ul class="flex justify-start items-center gap-4 whitespace-nowrap">
+              <li>
+                <a
+                  href="#"
+                  class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+                >
+                  Seasonal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+                  >Activity-Based</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+                  >Special Occasions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+                  >Unique Experiences</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--md button set-->
+          <div
+            class="sm-btn-secondary text-xl border-none px-5 py-4 mb-24 gap-5 flex justify-between items-center w-9/12 m-auto drop-shadow-normal hidden lg:flex"
+          >
+            <button
+              class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+            >
+              Seasonal
+            </button>
+            <button
+              class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+            >
+              Activity-Based
+            </button>
+            <button
+              class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+            >
+              Special Occasions
+            </button>
+            <button
+              class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+            >
+              Unique Experiences
+            </button>
+          </div>
+          <!--Location cards-->
+          <div
+            class="px-3 flex justify-start items-center gap-1 overflow-x-hidden lg:hidden"
+          >
+            <div class="card p-6 w-[312px] whitespace-nowrap my-8">
+              <img
+                src="/bagbuddy/assets/london-70acb0c8.png"
+                alt="london"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="flex justify-between items-center text-left pt-4 pb-2"
+              >
+                <h4>
+                  Lodnon, <br />
+                  UK
+                </h4>
+                <h1 class="text-primary-6">23°</h1>
+              </div>
+              <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                Partly sunny and beautiful in the next month
+              </p>
+              <hr class="border-t-1 border-lightgray-3 pb-4" />
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">RealFeel®</h5>
+                  <h5 class="font-normal text-primary-6">20°</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Max UV Index</h5>
+                  <h5 class="font-normal text-primary-6">6 High</h5>
+                </div>
+              </div>
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Air Quality</h5>
+                  <h5 class="font-normal text-primary-6">Fair</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                  <h5 class="font-normal text-primary-6">68°</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card p-6 w-80 whitespace-nowrap my-8">
+              <img
+                src="/bagbuddy/assets/lisbon-337e995e.png"
+                alt="lisbon"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="flex justify-between items-center text-left pt-4 pb-2"
+              >
+                <h4>
+                  Lisbon,
+                  <br />
+                  Portugal
+                </h4>
+                <h1 class="text-primary-6">20°</h1>
+              </div>
+              <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                Pleasant with sunshine and patchy clouds
+              </p>
+              <hr class="border-t-1 border-lightgray-3 pb-4" />
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">RealFeel®</h5>
+                  <h5 class="font-normal text-primary-6">19°</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Max UV Index</h5>
+                  <h5 class="font-normal text-primary-6">2 Low</h5>
+                </div>
+              </div>
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Air Quality</h5>
+                  <h5 class="font-normal text-primary-6">Fair</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                  <h5 class="font-normal text-primary-6">62°</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card p-6 w-80 whitespace-nowrap my-8">
+              <img
+                src="/bagbuddy/assets/lisbon-337e995e.png"
+                alt="lisbon"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="flex justify-between items-center text-left pt-4 pb-2"
+              >
+                <h4>
+                  Bari,
+                  <br />
+                  Italy
+                </h4>
+                <h1 class="text-primary-6">30°</h1>
+              </div>
+              <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                Partly sunny and beautiful in the next month
+              </p>
+              <hr class="border-t-1 border-lightgray-3 pb-4" />
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">RealFeel®</h5>
+                  <h5 class="font-normal text-primary-6">29°</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Max UV Index</h5>
+                  <h5 class="font-normal text-primary-6">9 Very High</h5>
+                </div>
+              </div>
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Air Quality</h5>
+                  <h5 class="font-normal text-primary-6">Fair</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                  <h5 class="font-normal text-primary-6">70°</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card p-6 w-80 whitespace-nowrap my-8">
+              <img
+                src="/bagbuddy/assets/lisbon-337e995e.png"
+                alt="lisbon"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="flex justify-between items-center text-left pt-4 pb-2"
+              >
+                <h4>
+                  Gold Coast,
+                  <br />
+                  Australia
+                </h4>
+                <h1 class="text-primary-6">20°</h1>
+              </div>
+              <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                Partly cloudy
+              </p>
+              <hr class="border-t-1 border-lightgray-3 pb-4" />
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">RealFeel®</h5>
+                  <h5 class="font-normal text-primary-6">19°</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Max UV Index</h5>
+                  <h5 class="font-normal text-primary-6">3 moderate</h5>
+                </div>
+              </div>
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Air Quality</h5>
+                  <h5 class="font-normal text-primary-6">Fair</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                  <h5 class="font-normal text-primary-6">65°</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card p-6 w-80 whitespace-nowrap my-8">
+              <img
+                src="/bagbuddy/assets/lisbon-337e995e.png"
+                alt="lisbon"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="flex justify-between items-center text-left pt-4 pb-2"
+              >
+                <h4>
+                  Copenhagen,
+                  <br />
+                  Danmark
+                </h4>
+                <h1 class="text-primary-6">17°</h1>
+              </div>
+              <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                Pleasant with sunshine and patchy clouds
+              </p>
+              <hr class="border-t-1 border-lightgray-3 pb-4" />
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">RealFeel®</h5>
+                  <h5 class="font-normal text-primary-6">18°</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Max UV Index</h5>
+                  <h5 class="font-normal text-primary-6">3 moderate</h5>
+                </div>
+              </div>
+              <div class="flex justify-between items-center pb-4">
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Air Quality</h5>
+                  <h5 class="font-normal text-primary-6">Fair</h5>
+                </div>
+                <div class="text-left w-1/2">
+                  <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                  <h5 class="font-normal text-primary-6">67°</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--flip location Cards-->
+          <div
+            class="hidden lg:relative lg:flex lg:justify-center lg:space-x-[-30px]"
+          >
+            <!--card 1-->
+            <div
+              class="drop-shadow-normal w-[312px] h-[480px] rounded-32lg locationCard hover:z-30 overflow-hidden z-10"
+            >
+              <!--this is filp container -->
+              <div class="w-full h-full relative cardContainer">
+                <!--front-->
+                <div class="w-full h-full absolute front">
+                  <img
+                    src="/bagbuddy/assets/london-70acb0c8.png"
+                    alt="london-image"
+                    class="h-full w-full object-fill"
+                  />
+                </div>
+                <!--back-->
+                <div class="bg-white p-6 w-full h-full absolute back">
+                  <img
+                    src="/bagbuddy/assets/london-70acb0c8.png"
+                    alt="london"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div
+                    class="flex justify-between items-center text-left pt-4 pb-2"
+                  >
+                    <h4>
+                      Lodnon, <br />
+                      UK
+                    </h4>
+                    <h1 class="text-primary-6">23°</h1>
+                  </div>
+                  <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                    Partly sunny and beautiful in the next month
+                  </p>
+                  <hr class="border-t-1 border-lightgray-3 pb-4" />
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        RealFeel®
+                      </h5>
+                      <h5 class="font-normal text-primary-6">20°</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Max UV Index
+                      </h5>
+                      <h5 class="font-normal text-primary-6">6 High</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Air Quality
+                      </h5>
+                      <h5 class="font-normal text-primary-6">Fair</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                      <h5 class="font-normal text-primary-6">68°</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card 2-->
+            <div
+              class="drop-shadow-normal w-[312px] h-[480px] rounded-32lg locationCard hover:z-40 overflow-hidden mt-12 z-20"
+            >
+              <!--this is filp container -->
+              <div class="w-full h-full relative cardContainer">
+                <!--front-->
+                <div class="w-full h-full absolute front">
+                  <img
+                    src="/bagbuddy/assets/tom-byrom-hgFX7SydvFk-unsplash 1-c578ea66.png"
+                    alt="london-image"
+                    class="h-full w-full object-fill"
+                  />
+                </div>
+                <!--back-->
+                <div class="bg-white p-6 w-full h-full absolute back">
+                  <img
+                    src="/bagbuddy/assets/tom-byrom-hgFX7SydvFk-unsplash 1-c578ea66.png"
+                    alt="london"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div
+                    class="flex justify-between items-center text-left pt-4 pb-2"
+                  >
+                    <h4>
+                      Lisbon, <br />
+                      Portugal
+                    </h4>
+                    <h1 class="text-primary-6">20°</h1>
+                  </div>
+                  <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                    Partly sunny and beautiful in the next month
+                  </p>
+                  <hr class="border-t-1 border-lightgray-3 pb-4" />
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        RealFeel®
+                      </h5>
+                      <h5 class="font-normal text-primary-6">19°</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Max UV Index
+                      </h5>
+                      <h5 class="font-normal text-primary-6">2 Low</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Air Quality
+                      </h5>
+                      <h5 class="font-normal text-primary-6">Fair</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                      <h5 class="font-normal text-primary-6">62°</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card 3-->
+            <div
+              class="drop-shadow-normal w-[312px] h-[480px] rounded-32lg locationCard hover:z-40 overflow-hidden z-30"
+            >
+              <!--this is filp container -->
+              <div class="w-full h-full relative cardContainer">
+                <!--front-->
+                <div class="w-full h-full absolute front">
+                  <img
+                    src="/bagbuddy/assets/lisbon-337e995e.png"
+                    alt="london-image"
+                    class="h-full w-full object-fill"
+                  />
+                </div>
+                <!--back-->
+                <div class="bg-white p-6 w-full h-full absolute back">
+                  <img
+                    src="/bagbuddy/assets/lisbon-337e995e.png"
+                    alt="london"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div
+                    class="flex justify-between items-center text-left pt-4 pb-2"
+                  >
+                    <h4>
+                      Bari, <br />
+                      Italy
+                    </h4>
+                    <h1 class="text-primary-6">30°</h1>
+                  </div>
+                  <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                    Partly sunny and beautiful in the next month
+                  </p>
+                  <hr class="border-t-1 border-lightgray-3 pb-4" />
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        RealFeel®
+                      </h5>
+                      <h5 class="font-normal text-primary-6">29°</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Max UV Index
+                      </h5>
+                      <h5 class="font-normal text-primary-6">9 Very High</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Air Quality
+                      </h5>
+                      <h5 class="font-normal text-primary-6">Fair</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                      <h5 class="font-normal text-primary-6">70°</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card 4-->
+            <div
+              class="drop-shadow-normal w-[312px] h-[480px] rounded-32lg locationCard hover:z-40 overflow-hidden mt-12 z-20"
+            >
+              <!--this is filp container -->
+              <div class="w-full h-full relative cardContainer">
+                <!--front-->
+                <div class="w-full h-full absolute front">
+                  <img
+                    src="/bagbuddy/assets/copenhagen-c2cfefb8.png"
+                    alt="london-image"
+                    class="h-full w-full object-fill"
+                  />
+                </div>
+                <!--back-->
+                <div class="bg-white p-6 w-full h-full absolute back">
+                  <img
+                    src="/bagbuddy/assets/copenhagen-c2cfefb8.png"
+                    alt="london"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div
+                    class="flex justify-between items-center text-left pt-4 pb-2"
+                  >
+                    <h4>
+                      Copenhagen,<br />
+                      Danmark
+                    </h4>
+                    <h1 class="text-primary-6">17°</h1>
+                  </div>
+                  <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                    Pleasant with sunshine and patchy clouds
+                  </p>
+                  <hr class="border-t-1 border-lightgray-3 pb-4" />
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        RealFeel®
+                      </h5>
+                      <h5 class="font-normal text-primary-6">20°</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Max UV Index
+                      </h5>
+                      <h5 class="font-normal text-primary-6">3 moderate</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Air Quality
+                      </h5>
+                      <h5 class="font-normal text-primary-6">Fair</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                      <h5 class="font-normal text-primary-6">67°</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card 5-->
+            <div
+              class="drop-shadow-normal w-[312px] h-[480px] rounded-32lg locationCard hover:z-40 overflow-hidden x-10"
+            >
+              <!--this is filp container -->
+              <div class="w-full h-full relative cardContainer">
+                <!--front-->
+                <div class="w-full h-full absolute front">
+                  <img
+                    src="/bagbuddy/assets/austria-7167d83b.png"
+                    alt="london-image"
+                    class="h-full w-full object-fill"
+                  />
+                </div>
+                <!--back-->
+                <div class="bg-white p-6 w-full h-full absolute back">
+                  <img
+                    src="/bagbuddy/assets/austria-7167d83b.png"
+                    alt="london"
+                    class="w-full h-40 object-cover"
+                  />
+                  <div
+                    class="flex justify-between items-center text-left pt-4 pb-2"
+                  >
+                    <h4>
+                      Gold Coast,<br />
+                      Australia
+                    </h4>
+                    <h1 class="text-primary-6">20°</h1>
+                  </div>
+                  <p class="body4 text-darkgray-3 text-left text-wrap pb-4">
+                    Partly cloudy
+                  </p>
+                  <hr class="border-t-1 border-lightgray-3 pb-4" />
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        RealFeel®
+                      </h5>
+                      <h5 class="font-normal text-primary-6">19°</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Max UV Index
+                      </h5>
+                      <h5 class="font-normal text-primary-6">3 moderate</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center pb-4">
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">
+                        Air Quality
+                      </h5>
+                      <h5 class="font-normal text-primary-6">Fair</h5>
+                    </div>
+                    <div class="text-left w-1/2">
+                      <h5 class="font-normal text-darkgray-1 pb-1">Humidity</h5>
+                      <h5 class="font-normal text-primary-6">65°</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--create your pack list-->
+        <section
+          class="mx-4 my-8 lg:flex lg:justify-center lg:items-center lg:gap-32 lg:py-40 lg:relative"
+        >
+          <div class="w-full lg:w-2/5">
+            <h2
+              class="text-center text-darkgray-5 lg:text-left lg:pb-4 lg:lHead"
+            >
+              Create Your Own Pack List
+            </h2>
+            <p class="text-center text-darkgray-3 lg:text-left lg:pb-10">
+              Customize your packing list by answering a few questions about
+              your trip. This will help us generate a personalized list that
+              suits your travel needs.
+            </p>
+            <div class="py-6 ms-3 lg:hidden">
+              <ul class="flex justify-center items-center gap-4">
+                <li>
+                  <a
+                    href="#"
+                    class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+                  >
+                    Basic</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+                    >Precise</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="sm-btn-secondary border-none px-5 py-4 flex justify-between items-center w-56 drop-shadow-normal hidden lg:flex"
+            >
+              <button
+                class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+              >
+                Basic
+              </button>
+              <button
+                class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+              >
+                Precise
+              </button>
+            </div>
+          </div>
+          <div class="card px-6 py-8 lg:w-[636px] lg:z-40">
+            <h3 class="text-center text-primary-6 font-bowlb">
+              Basic Packing List
+            </h3>
+            <form action="" class="flex flex-col w-full">
+              <!-- Travel Date -->
+              <label
+                for="travelDate"
+                class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+                >Travel Date</label
+              >
+              <div class="flex w-full gap-2">
+                <input
+                  type="date"
+                  id="depart"
+                  name="travelDate"
+                  placeholder="Depart"
+                  class="w-1/2"
+                />
+                <input
+                  type="date"
+                  id="return"
+                  name="travelDate"
+                  placeholder="Return"
+                  class="w-1/2"
+                />
+              </div>
+              <!-- Destination -->
+              <label
+                for="country"
+                class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+                >Destination</label
+              >
+              <div class="flex justify-between items-center w-full gap-2">
+                <select id="contry" name="contry" class="w-1/2">
+                  <option value="country">Taiwan</option>
+                </select>
+                <select id="city" name="city" class="w-1/2">
+                  <option value="city">Taipei</option>
+                </select>
+              </div>
+              <!-- Airline and Cabin Class -->
+              <div class="flex justify-between items-center w-full gap-2">
+                <div class="w-1/2 flex flex-col items-start">
+                  <label
+                    for="airline"
+                    class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+                    >Airline</label
+                  >
+                  <select id="airline" name="airline" class="w-full">
+                    <option value="airline">Dalta airline</option>
+                  </select>
+                </div>
+                <div class="w-1/2 flex flex-col items-start">
+                  <label
+                    for="airline"
+                    class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+                    >Cabin Class</label
+                  >
+                  <select id="airline" name="airline" class="w-full">
+                    <option value="Cabin Class">first class</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Nationality -->
+              <div class="flex flex-col">
+                <label
+                  for="nationality"
+                  class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+                  >Nationality</label
+                >
+                <select id="nationality" name="nationality">
+                  <option value="nationality"></option>
+                </select>
+              </div>
+              <!-- Accommodation Type -->
+              <div class="flex flex-col pb-6">
+                <label
+                  for="accommodation"
+                  class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+                  >Accommodation Type</label
+                >
+                <select id="accommodation" name="accommodation">
+                  <option value="accommodation"></option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                class="sm-btn-primary text-xl bg-lightgray-3 w-full text-lightgray-5 bowlby-regular"
+              >
+                Get my packing list
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!--footer-->
+      <footer class="container py-8 m-auto">
+  <div class="mx-3 lg:hidden">
+    <div class="w-full pb-6 lg:hidden">
+      <img src="data:image/png;base64,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" alt="logo" class="w-40" />
+      <p class="body3 text-darkgray-3 pt-3">
+        "BagBuddy helps travelers create personalized packing lists based on
+        their travel plans and preferences. "
+      </p>
+    </div>
+    <hr class="border-t border-lightgray-3" />
+    <!-- Flexbox layout for links -->
+    <div class="w-full py-6 lg:hidden">
+      <div
+        class="flex flex-col pb-6 md:flex-row items-center gap-3 md:justify-center md:w-full"
+      >
+        <div class="flex justify-start items-center w-full md:w-auto">
+          <p class="w-full md:w-auto">
+            <a href="#" class="body3 text-darkgray-3 block">Subscription</a>
+          </p>
+          <p class="w-full md:w-auto">
+            <a href="#" class="body3 text-darkgray-3 block">Resources</a>
+          </p>
+        </div>
+        <div class="flex justify-start items-center w-full md:w-auto">
+          <p class="w-full md:w-auto">
+            <a href="#" class="body3 text-darkgray-3 block">Account</a>
+          </p>
+          <p class="w-full md:w-auto">
+            <a href="#" class="body3 text-darkgray-3 block">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+      <!-- Additional information sections -->
+      <div class="w-full">
+        <div>
+          <h6>Email</h6>
+          <p>
+            <a href="" class="body3 text-darkgray-3">auratao.model@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <h6>Number</h6>
+          <p>
+            <a href="" class="body3 text-darkgray-3">+39 3519056243</a>
+          </p>
+        </div>
+        <div>
+          <h6>GitHub</h6>
+          <p>
+            <a href="" class="body3 text-darkgray-3"
+              >https://github.com/AURATAO</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--lg screen footer-->
+  </div>
+  <div class="hidden pb-10 lg:flex">
+    <div class="flex justify-between items-center w-full">
+      <img src="data:image/png;base64,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" alt="logo" class="w-50" />
+      <ul class="flex justify-center items-center gap-8">
+        <li>
+          <a href="#" class="body3 text-darkgray-3 block">Subscription</a>
+        </li>
+        <li><a href="#" class="body3 text-darkgray-3 block">Resources</a></li>
+        <li><a href="#" class="body3 text-darkgray-3 block">Account</a></li>
+        <li>
+          <a href="#" class="body3 text-darkgray-3 block">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex justify-between items-center w-full pb-10 hidden lg:flex">
+    <p class="body3 text-darkgray-3 pt-3">
+      "BagBuddy helps travelers create personalized packing lists based on their
+      travel plans and preferences. "
+    </p>
+    <div class="flex justify-end items-center gap-8">
+      <div>
+        <h6>Email</h6>
+        <p>
+          <a href="mailto:auratao.model@gmail.com" class="body3 text-darkgray-3"
+            >auratao.model@gmail.com</a
+          >
+        </p>
+      </div>
+      <div>
+        <h6>Number</h6>
+        <p>
+          <a
+            href="tel:+393519056243"
+            class="body3 text-darkgray-3 whitespace-nowrap"
+            >+39 3519056243</a
+          >
+        </p>
+      </div>
+      <div>
+        <h6>GitHub</h6>
+        <p>
+          <a href="https://github.com/AURATAO" class="body3 text-darkgray-3"
+            >https://github.com/AURATAO</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr class="border-t border-lightgray-3 mx-3" />
+  <div
+    class="py-6 lg:border-t lg:border-lightgray-3 lg:text-center lg:flex lg:justify-center lg:items-center"
+  >
+    <p class="body3 text-darkgray-3 mx-3">
+      © 2024 BagBuddy. All rights reserved.
+    </p>
+  </div>
+</footer>
+    </div>
+
+    
+  </body>
+</html>
