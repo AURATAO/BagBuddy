@@ -19,3 +19,34 @@ const premadeListMenu = document.getElementById("premadeListMenu");
 PremadeListdropDownBtn.addEventListener("click", () => {
   premadeListMenu.classList.toggle("hidden");
 });
+
+/**
+ * 
+ * POST /api/v1/post/packagelist/basic
+ * 
+ * {
+ *  userId: "uuid"
+ *  departureDate: "yyyy/mm/dd"
+ *  arrivalDate: "yyyy/mm/dd"
+ *  destinationCity: "string"
+ *  destinationCountry: "string"
+ *  airline: "string"
+ *  cabinClass: "string"
+ *  nationality: "string"
+    accomodationType: "yyyy/mm/dd"
+ *  gender: ""
+    activityLevel: ""
+    
+ * }
+
+    id = 12
+
+    nodejs 
+    express
+    pocketbase
+
+    GET /api/v1/get/packagelist/:id
+    /api/v1/get/packagelist/12
+
+ * 
+ */
