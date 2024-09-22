@@ -1,0 +1,140 @@
+<section
+  id="target-section"
+  class="mx-4 my-8 lg:flex lg:justify-center lg:items-center lg:gap-32 lg:py-40 lg:relative"
+>
+  <div class="w-full lg:w-2/5">
+    <h2 class="text-center text-darkgray-5 lg:text-left lg:pb-4 lg:lHead">
+      Create Your Own Pack List
+    </h2>
+    <p class="text-center text-darkgray-3 lg:text-left lg:pb-10">
+      Customize your packing list by answering a few questions about your trip.
+      This will help us generate a personalized list that suits your travel
+      needs.
+    </p>
+    <div class="py-6 ms-3 lg:hidden">
+      <ul class="flex justify-center items-center gap-4">
+        <li>
+          <a
+            href="#"
+            class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+          >
+            Basic</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+            >Precise</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class="sm-btn-secondary border-none px-5 py-4 flex justify-between items-center w-56 drop-shadow-normal hidden lg:flex"
+    >
+      <button
+        class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+      >
+        Basic
+      </button>
+      <button
+        class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+      >
+        Precise
+      </button>
+    </div>
+  </div>
+  <div class="card px-6 py-8 lg:w-[636px] lg:z-40">
+    <h3 class="text-center text-primary-6 font-bowlb">Basic Packing List</h3>
+    <form action="" class="flex flex-col w-full">
+      <!-- Travel Date -->
+      <label
+        for="travelDate"
+        class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+        >Travel Date</label
+      >
+      <div class="flex w-full gap-2">
+        <input
+          type="date"
+          id="depart"
+          name="travelDate"
+          placeholder="Depart"
+          class="w-1/2"
+        />
+        <input
+          type="date"
+          id="return"
+          name="travelDate"
+          placeholder="Return"
+          class="w-1/2"
+        />
+      </div>
+      <!-- Destination -->
+      <label
+        for="country"
+        class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+        >Destination</label
+      >
+      <div class="flex justify-between items-center w-full gap-2">
+        <select id="contry" name="contry" class="w-1/2">
+          <option value="country">Taiwan</option>
+        </select>
+        <select id="city" name="city" class="w-1/2">
+          <option value="city">Taipei</option>
+        </select>
+      </div>
+      <!-- Airline and Cabin Class -->
+      <div class="flex justify-between items-center w-full gap-2">
+        <div class="w-1/2 flex flex-col items-start">
+          <label
+            for="airline"
+            class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+            >Airline</label
+          >
+          <select id="airline" name="airline" class="w-full">
+            <option value="airline">Dalta airline</option>
+          </select>
+        </div>
+        <div class="w-1/2 flex flex-col items-start">
+          <label
+            for="airline"
+            class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+            >Cabin Class</label
+          >
+          <select id="airline" name="airline" class="w-full">
+            <option value="Cabin Class">first class</option>
+          </select>
+        </div>
+      </div>
+      <!-- Nationality -->
+      <div class="flex flex-col">
+        <label
+          for="nationality"
+          class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+          >Nationality</label
+        >
+        <select id="nationality" name="nationality">
+          <option value="nationality"></option>
+        </select>
+      </div>
+      <!-- Accommodation Type -->
+      <div class="flex flex-col pb-6">
+        <label
+          for="accommodation"
+          class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+          >Accommodation Type</label
+        >
+        <select id="accommodation" name="accommodation">
+          <option value="accommodation"></option>
+        </select>
+      </div>
+      <button
+        type="submit"
+        class="sm-btn-primary text-xl bg-lightgray-3 w-full text-lightgray-5 bowlby-regular"
+      >
+        Get my packing list
+      </button>
+    </form>
+  </div>
+</section>

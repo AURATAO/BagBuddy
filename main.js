@@ -1,3 +1,2 @@
-import './assets/css/main.css';
-
-console.log("Hello world!");
+import "./assets/css/main.css";
+import "./assets/js/index.js";

@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./pages/index.html", "./layout/header.ejs", "./main.js"],
+  content: [
+    "./pages/index.html",
+    "./layout/header.ejs",
+    "./main.js",
+    "./layout/footer.ejs",
+    "./vite.config.js",
+    "./postcss.config.js",
+  ],
   theme: {
     extend: {
       colors: {

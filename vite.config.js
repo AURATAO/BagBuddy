@@ -3,6 +3,7 @@ import { ViteEjsPlugin } from "vite-plugin-ejs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { glob } from "glob";
+import tailwindcss from "tailwindcss";
 
 import liveReload from "vite-plugin-live-reload";
 
@@ -25,7 +26,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base: "/bagbuddy/",
+  base: "/BagBuddy/",
   plugins: [
     liveReload([
       "./layout/header.ejs",
@@ -34,6 +35,7 @@ export default defineConfig({
     ]),
     ViteEjsPlugin(),
     moveOutputPlugin(),
+    tailwindcss(),
   ],
   server: {
     // 啟動 server 時預設開啟的頁面

@@ -34,7 +34,10 @@
             <h2 class="text-center pb-6 lg:bigHead lg:text-start">
               BagBuddy, Your Packing Pal!
             </h2>
-            <button class="sm-btn-primary hover:bg-primary-5">
+            <button
+              id="scroll-button"
+              class="sm-btn-primary hover:bg-primary-5"
+            >
               Create Your Own Pack List
             </button>
           </div>
@@ -70,7 +73,8 @@
               />
               <div class="flex justify-center md:justify-start md:lHead">
                 <button
-                  class="sm-btn-primary flex justify-between items-center gap-3 hover:bg-primary-5"
+                  id="PremadeListdropDownBtn"
+                  class="releative sm-btn-primary flex justify-between items-center gap-3 hover:bg-primary-5"
                 >
                   Get The Pack List
                   <img
@@ -78,13 +82,33 @@
                     alt="arrow-icon"
                   />
                 </button>
+
+                <div
+                  id="premadeListMenu"
+                  class="hidden absolute bottom right-4 border border-lightgray-4 rounded-2xl bg-white"
+                >
+                  <div class="p-4 text-start">
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Sleepover Packlist</a
+                    >
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Beach vacation Packlist</a
+                    >
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Business Packlist</a
+                    >
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Camping Packlist</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!--travel idea-->
         <section class="text-center">
-          <div class="mx-3 pb-10">
+          <div class="mx-3 py-10">
             <h2 class="pb-2">Inspiration for future getaways</h2>
             <p>
               Discover ideal travel destinations based on current weather
@@ -684,7 +708,9 @@
           </div>
         </section>
         <!--create your pack list-->
-        <section
+        <%- include('./layout/form'); -%>
+        <!-- <section
+          id="target-section"
           class="mx-4 my-8 lg:flex lg:justify-center lg:items-center lg:gap-32 lg:py-40 lg:relative"
         >
           <div class="w-full lg:w-2/5">
@@ -737,7 +763,7 @@
               Basic Packing List
             </h3>
             <form action="" class="flex flex-col w-full">
-              <!-- Travel Date -->
+              Travel Date
               <label
                 for="travelDate"
                 class="text-base font-medium text-darkgray-3 pb-2 pt-3"
@@ -759,7 +785,7 @@
                   class="w-1/2"
                 />
               </div>
-              <!-- Destination -->
+              Destination
               <label
                 for="country"
                 class="text-base font-medium text-darkgray-3 pb-2 pt-3"
@@ -773,7 +799,7 @@
                   <option value="city">Taipei</option>
                 </select>
               </div>
-              <!-- Airline and Cabin Class -->
+              Airline and Cabin Class
               <div class="flex justify-between items-center w-full gap-2">
                 <div class="w-1/2 flex flex-col items-start">
                   <label
@@ -796,7 +822,7 @@
                   </select>
                 </div>
               </div>
-              <!-- Nationality -->
+             Nationality
               <div class="flex flex-col">
                 <label
                   for="nationality"
@@ -807,7 +833,7 @@
                   <option value="nationality"></option>
                 </select>
               </div>
-              <!-- Accommodation Type -->
+              Accommodation Type 
               <div class="flex flex-col pb-6">
                 <label
                   for="accommodation"
@@ -826,7 +852,7 @@
               </button>
             </form>
           </div>
-        </section>
+        </section> -->
       </main>
 
       <!--footer-->
