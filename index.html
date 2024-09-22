@@ -18,8 +18,8 @@
     />
 
     <title>index</title>
-    <script type="module" crossorigin src="/bagbuddy/assets/main-a5858cd6.js"></script>
-    <link rel="stylesheet" href="/bagbuddy/assets/main-21fbe6df.css">
+    <script type="module" crossorigin src="/BagBuddy/assets/index-096fcdf8.js"></script>
+    <link rel="stylesheet" href="/BagBuddy/assets/index-016be1b3.css">
   </head>
   <body class="bg-mobile bg-cover bg-no-repeat w-full sm:bg-desktop">
     <div class="w-full">
@@ -68,12 +68,15 @@
             <h2 class="text-center pb-6 lg:bigHead lg:text-start">
               BagBuddy, Your Packing Pal!
             </h2>
-            <button class="sm-btn-primary hover:bg-primary-5">
+            <button
+              id="scroll-button"
+              class="sm-btn-primary hover:bg-primary-5"
+            >
               Create Your Own Pack List
             </button>
           </div>
           <img
-            src="/bagbuddy/assets/Hero Image-48718368.png"
+            src="/BagBuddy/assets/Hero Image-48718368.png"
             alt="image"
             class="w-full sm:w-1/2"
           />
@@ -82,7 +85,7 @@
         <section class="m-auto text-center py-8">
           <div class="md:flex md:justify-between md:items-center md:gap-10">
             <img
-              src="/bagbuddy/assets/PackList-f4ab0f65.png"
+              src="/BagBuddy/assets/PackList-f4ab0f65.png"
               alt="packlist"
               class="hidden md:flex md:w-1/2"
             />
@@ -98,13 +101,14 @@
                 your own custom lists!
               </p>
               <img
-                src="/bagbuddy/assets/PackList-f4ab0f65.png"
+                src="/BagBuddy/assets/PackList-f4ab0f65.png"
                 alt="packlist"
                 class="md:hidden"
               />
               <div class="flex justify-center md:justify-start md:lHead">
                 <button
-                  class="sm-btn-primary flex justify-between items-center gap-3 hover:bg-primary-5"
+                  id="PremadeListdropDownBtn"
+                  class="releative sm-btn-primary flex justify-between items-center gap-3 hover:bg-primary-5"
                 >
                   Get The Pack List
                   <img
@@ -112,13 +116,33 @@
                     alt="arrow-icon"
                   />
                 </button>
+
+                <div
+                  id="premadeListMenu"
+                  class="hidden absolute bottom right-4 border border-lightgray-4 rounded-2xl bg-white"
+                >
+                  <div class="p-4 text-start">
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Sleepover Packlist</a
+                    >
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Beach vacation Packlist</a
+                    >
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Business Packlist</a
+                    >
+                    <a href="#" class="block text-lightgray-4 text-base py-2"
+                      >Download Camping Packlist</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!--travel idea-->
         <section class="text-center">
-          <div class="mx-3 pb-10">
+          <div class="mx-3 py-10">
             <h2 class="pb-2">Inspiration for future getaways</h2>
             <p>
               Discover ideal travel destinations based on current weather
@@ -193,7 +217,7 @@
           >
             <div class="card p-6 w-[312px] whitespace-nowrap my-8">
               <img
-                src="/bagbuddy/assets/london-70acb0c8.png"
+                src="/BagBuddy/assets/london-70acb0c8.png"
                 alt="london"
                 class="w-full h-40 object-cover"
               />
@@ -233,7 +257,7 @@
             </div>
             <div class="card p-6 w-80 whitespace-nowrap my-8">
               <img
-                src="/bagbuddy/assets/lisbon-337e995e.png"
+                src="/BagBuddy/assets/lisbon-337e995e.png"
                 alt="lisbon"
                 class="w-full h-40 object-cover"
               />
@@ -274,7 +298,7 @@
             </div>
             <div class="card p-6 w-80 whitespace-nowrap my-8">
               <img
-                src="/bagbuddy/assets/lisbon-337e995e.png"
+                src="/BagBuddy/assets/lisbon-337e995e.png"
                 alt="lisbon"
                 class="w-full h-40 object-cover"
               />
@@ -315,7 +339,7 @@
             </div>
             <div class="card p-6 w-80 whitespace-nowrap my-8">
               <img
-                src="/bagbuddy/assets/lisbon-337e995e.png"
+                src="/BagBuddy/assets/lisbon-337e995e.png"
                 alt="lisbon"
                 class="w-full h-40 object-cover"
               />
@@ -356,7 +380,7 @@
             </div>
             <div class="card p-6 w-80 whitespace-nowrap my-8">
               <img
-                src="/bagbuddy/assets/lisbon-337e995e.png"
+                src="/BagBuddy/assets/lisbon-337e995e.png"
                 alt="lisbon"
                 class="w-full h-40 object-cover"
               />
@@ -409,7 +433,7 @@
                 <!--front-->
                 <div class="w-full h-full absolute front">
                   <img
-                    src="/bagbuddy/assets/london-70acb0c8.png"
+                    src="/BagBuddy/assets/london-70acb0c8.png"
                     alt="london-image"
                     class="h-full w-full object-fill"
                   />
@@ -417,7 +441,7 @@
                 <!--back-->
                 <div class="bg-white p-6 w-full h-full absolute back">
                   <img
-                    src="/bagbuddy/assets/london-70acb0c8.png"
+                    src="/BagBuddy/assets/london-70acb0c8.png"
                     alt="london"
                     class="w-full h-40 object-cover"
                   />
@@ -472,7 +496,7 @@
                 <!--front-->
                 <div class="w-full h-full absolute front">
                   <img
-                    src="/bagbuddy/assets/tom-byrom-hgFX7SydvFk-unsplash 1-c578ea66.png"
+                    src="/BagBuddy/assets/tom-byrom-hgFX7SydvFk-unsplash 1-c578ea66.png"
                     alt="london-image"
                     class="h-full w-full object-fill"
                   />
@@ -480,7 +504,7 @@
                 <!--back-->
                 <div class="bg-white p-6 w-full h-full absolute back">
                   <img
-                    src="/bagbuddy/assets/tom-byrom-hgFX7SydvFk-unsplash 1-c578ea66.png"
+                    src="/BagBuddy/assets/tom-byrom-hgFX7SydvFk-unsplash 1-c578ea66.png"
                     alt="london"
                     class="w-full h-40 object-cover"
                   />
@@ -535,7 +559,7 @@
                 <!--front-->
                 <div class="w-full h-full absolute front">
                   <img
-                    src="/bagbuddy/assets/lisbon-337e995e.png"
+                    src="/BagBuddy/assets/lisbon-337e995e.png"
                     alt="london-image"
                     class="h-full w-full object-fill"
                   />
@@ -543,7 +567,7 @@
                 <!--back-->
                 <div class="bg-white p-6 w-full h-full absolute back">
                   <img
-                    src="/bagbuddy/assets/lisbon-337e995e.png"
+                    src="/BagBuddy/assets/lisbon-337e995e.png"
                     alt="london"
                     class="w-full h-40 object-cover"
                   />
@@ -598,7 +622,7 @@
                 <!--front-->
                 <div class="w-full h-full absolute front">
                   <img
-                    src="/bagbuddy/assets/copenhagen-c2cfefb8.png"
+                    src="/BagBuddy/assets/copenhagen-c2cfefb8.png"
                     alt="london-image"
                     class="h-full w-full object-fill"
                   />
@@ -606,7 +630,7 @@
                 <!--back-->
                 <div class="bg-white p-6 w-full h-full absolute back">
                   <img
-                    src="/bagbuddy/assets/copenhagen-c2cfefb8.png"
+                    src="/BagBuddy/assets/copenhagen-c2cfefb8.png"
                     alt="london"
                     class="w-full h-40 object-cover"
                   />
@@ -661,7 +685,7 @@
                 <!--front-->
                 <div class="w-full h-full absolute front">
                   <img
-                    src="/bagbuddy/assets/austria-7167d83b.png"
+                    src="/BagBuddy/assets/austria-7167d83b.png"
                     alt="london-image"
                     class="h-full w-full object-fill"
                   />
@@ -669,7 +693,7 @@
                 <!--back-->
                 <div class="bg-white p-6 w-full h-full absolute back">
                   <img
-                    src="/bagbuddy/assets/austria-7167d83b.png"
+                    src="/BagBuddy/assets/austria-7167d83b.png"
                     alt="london"
                     class="w-full h-40 object-cover"
                   />
@@ -719,6 +743,147 @@
         </section>
         <!--create your pack list-->
         <section
+  id="target-section"
+  class="mx-4 my-8 lg:flex lg:justify-center lg:items-center lg:gap-32 lg:py-40 lg:relative"
+>
+  <div class="w-full lg:w-2/5">
+    <h2 class="text-center text-darkgray-5 lg:text-left lg:pb-4 lg:lHead">
+      Create Your Own Pack List
+    </h2>
+    <p class="text-center text-darkgray-3 lg:text-left lg:pb-10">
+      Customize your packing list by answering a few questions about your trip.
+      This will help us generate a personalized list that suits your travel
+      needs.
+    </p>
+    <div class="py-6 ms-3 lg:hidden">
+      <ul class="flex justify-center items-center gap-4">
+        <li>
+          <a
+            href="#"
+            class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+          >
+            Basic</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="body4 text-darkgray-1 font-bold hover:text-primary-6"
+            >Precise</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class="sm-btn-secondary border-none px-5 py-4 flex justify-between items-center w-56 drop-shadow-normal hidden lg:flex"
+    >
+      <button
+        class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+      >
+        Basic
+      </button>
+      <button
+        class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+      >
+        Precise
+      </button>
+    </div>
+  </div>
+  <div class="card px-6 py-8 lg:w-[636px] lg:z-40">
+    <h3 class="text-center text-primary-6 font-bowlb">Basic Packing List</h3>
+    <form action="" class="flex flex-col w-full">
+      <!-- Travel Date -->
+      <label
+        for="travelDate"
+        class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+        >Travel Date</label
+      >
+      <div class="flex w-full gap-2">
+        <input
+          type="date"
+          id="depart"
+          name="travelDate"
+          placeholder="Depart"
+          class="w-1/2"
+        />
+        <input
+          type="date"
+          id="return"
+          name="travelDate"
+          placeholder="Return"
+          class="w-1/2"
+        />
+      </div>
+      <!-- Destination -->
+      <label
+        for="country"
+        class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+        >Destination</label
+      >
+      <div class="flex justify-between items-center w-full gap-2">
+        <select id="contry" name="contry" class="w-1/2">
+          <option value="country">Taiwan</option>
+        </select>
+        <select id="city" name="city" class="w-1/2">
+          <option value="city">Taipei</option>
+        </select>
+      </div>
+      <!-- Airline and Cabin Class -->
+      <div class="flex justify-between items-center w-full gap-2">
+        <div class="w-1/2 flex flex-col items-start">
+          <label
+            for="airline"
+            class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+            >Airline</label
+          >
+          <select id="airline" name="airline" class="w-full">
+            <option value="airline">Dalta airline</option>
+          </select>
+        </div>
+        <div class="w-1/2 flex flex-col items-start">
+          <label
+            for="airline"
+            class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+            >Cabin Class</label
+          >
+          <select id="airline" name="airline" class="w-full">
+            <option value="Cabin Class">first class</option>
+          </select>
+        </div>
+      </div>
+      <!-- Nationality -->
+      <div class="flex flex-col">
+        <label
+          for="nationality"
+          class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+          >Nationality</label
+        >
+        <select id="nationality" name="nationality">
+          <option value="nationality"></option>
+        </select>
+      </div>
+      <!-- Accommodation Type -->
+      <div class="flex flex-col pb-6">
+        <label
+          for="accommodation"
+          class="text-base font-medium text-darkgray-3 pb-2 pt-3"
+          >Accommodation Type</label
+        >
+        <select id="accommodation" name="accommodation">
+          <option value="accommodation"></option>
+        </select>
+      </div>
+      <button
+        type="submit"
+        class="sm-btn-primary text-xl bg-lightgray-3 w-full text-lightgray-5 bowlby-regular"
+      >
+        Get my packing list
+      </button>
+    </form>
+  </div>
+</section>
+        <!-- <section
+          id="target-section"
           class="mx-4 my-8 lg:flex lg:justify-center lg:items-center lg:gap-32 lg:py-40 lg:relative"
         >
           <div class="w-full lg:w-2/5">
@@ -771,7 +936,7 @@
               Basic Packing List
             </h3>
             <form action="" class="flex flex-col w-full">
-              <!-- Travel Date -->
+              Travel Date
               <label
                 for="travelDate"
                 class="text-base font-medium text-darkgray-3 pb-2 pt-3"
@@ -793,7 +958,7 @@
                   class="w-1/2"
                 />
               </div>
-              <!-- Destination -->
+              Destination
               <label
                 for="country"
                 class="text-base font-medium text-darkgray-3 pb-2 pt-3"
@@ -807,7 +972,7 @@
                   <option value="city">Taipei</option>
                 </select>
               </div>
-              <!-- Airline and Cabin Class -->
+              Airline and Cabin Class
               <div class="flex justify-between items-center w-full gap-2">
                 <div class="w-1/2 flex flex-col items-start">
                   <label
@@ -830,7 +995,7 @@
                   </select>
                 </div>
               </div>
-              <!-- Nationality -->
+             Nationality
               <div class="flex flex-col">
                 <label
                   for="nationality"
@@ -841,7 +1006,7 @@
                   <option value="nationality"></option>
                 </select>
               </div>
-              <!-- Accommodation Type -->
+              Accommodation Type 
               <div class="flex flex-col pb-6">
                 <label
                   for="accommodation"
@@ -860,7 +1025,7 @@
               </button>
             </form>
           </div>
-        </section>
+        </section> -->
       </main>
 
       <!--footer-->
