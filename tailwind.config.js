@@ -7,6 +7,7 @@ export default {
     "./layout/footer.ejs",
     "./vite.config.js",
     "./postcss.config.js",
+    "./layout/form.ejs",
   ],
   theme: {
     extend: {
@@ -39,8 +40,8 @@ export default {
       },
 
       backgroundImage: {
-        desktop: "url('/bagbuddy/assets/images/Background/desktop.png')",
-        mobile: "url('/bagbuddy/assets/images/Background/Mobile.png')",
+        desktop: "url('/assets/images/Background/Desktop.png')",
+        mobile: "url('/assets/images/Background/Mobile.png')",
       },
 
       spacing: {

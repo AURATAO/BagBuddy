@@ -1,8 +1,8 @@
 <section
   id="target-section"
-  class="mx-4 my-8 lg:flex lg:justify-center lg:items-center lg:gap-32 lg:py-40 lg:relative"
+  class="mx-4 my-8 lg:flex lg:justify-between lg:items-center lg:gap-32 lg:py-40 lg:relative"
 >
-  <div class="w-full lg:w-2/5">
+  <div class="lg:w-2/5">
     <h2 class="text-center text-darkgray-5 lg:text-left lg:pb-4 lg:lHead">
       Create Your Own Pack List
     </h2>
@@ -31,15 +31,15 @@
       </ul>
     </div>
     <div
-      class="sm-btn-secondary border-none px-5 py-4 flex justify-between items-center w-56 drop-shadow-normal hidden lg:flex"
+      class="w-56 h-14 sm-btn-secondary border-none px-5 flex justify-between items-center drop-shadow-normal hidden lg:flex"
     >
       <button
-        class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+        class="h-full text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1 focus:outline-none"
       >
         Basic
       </button>
       <button
-        class="text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1"
+        class="h-full text-xl font-bold text-darkgray-1 focus:sm-btn-primary focus:text-lg focus:px-2 focus:py-1 focus:outline-none"
       >
         Precise
       </button>
@@ -47,7 +47,12 @@
   </div>
   <div class="card px-6 py-8 lg:w-[636px] lg:z-40">
     <h3 class="text-center text-primary-6 font-bowlb">Basic Packing List</h3>
-    <form action="" class="flex flex-col w-full">
+    <form
+      id="packingListForm"
+      action="/submit-packList"
+      method="POST"
+      class="flex flex-col w-full"
+    >
       <!-- Travel Date -->
       <label
         for="travelDate"
@@ -58,14 +63,14 @@
         <input
           type="date"
           id="depart"
-          name="travelDate"
+          name="depart"
           placeholder="Depart"
           class="w-1/2"
         />
         <input
           type="date"
           id="return"
-          name="travelDate"
+          name="return"
           placeholder="Return"
           class="w-1/2"
         />
@@ -77,11 +82,11 @@
         >Destination</label
       >
       <div class="flex justify-between items-center w-full gap-2">
-        <select id="contry" name="contry" class="w-1/2">
-          <option value="country">Taiwan</option>
+        <select id="country" name="country" class="w-1/2">
+          <option value="">Select Country</option>
         </select>
         <select id="city" name="city" class="w-1/2">
-          <option value="city">Taipei</option>
+          <option value="">Select City</option>
         </select>
       </div>
       <!-- Airline and Cabin Class -->
@@ -98,11 +103,11 @@
         </div>
         <div class="w-1/2 flex flex-col items-start">
           <label
-            for="airline"
+            for="cabinClass"
             class="text-base font-medium text-darkgray-3 pb-2 pt-3"
             >Cabin Class</label
           >
-          <select id="airline" name="airline" class="w-full">
+          <select id="cabinClass" name="cabinClass" class="w-full">
             <option value="Cabin Class">first class</option>
           </select>
         </div>
@@ -115,7 +120,7 @@
           >Nationality</label
         >
         <select id="nationality" name="nationality">
-          <option value="nationality"></option>
+          <option value="">Select Nationality</option>
         </select>
       </div>
       <!-- Accommodation Type -->
@@ -126,10 +131,18 @@
           >Accommodation Type</label
         >
         <select id="accommodation" name="accommodation">
-          <option value="accommodation"></option>
+          <option value="">Select Acommodation type</option>
+          <option value="hotel">Hotel</option>
+          <option value="hostel">Hostel</option>
+          <option value="vacationRental">Vacation rental (e.g., Airbnb)</option>
+          <option value="camping">Camping</option>
+          <option value="resort">Resort</option>
+          <option value="guesthouse">Guesthouse</option>
+          <option value="bnb">Bed & Breakfast</option>
         </select>
       </div>
       <button
+        id="submit"
         type="submit"
         class="sm-btn-primary text-xl bg-lightgray-3 w-full text-lightgray-5 bowlby-regular"
       >

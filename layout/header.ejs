@@ -6,6 +6,13 @@
       src="../assets/images/icon/Vector (5).png"
       alt="menu-icon"
       class="lg:hidden"
+      id="openHam"
+    />
+    <img
+      src="/assets/images/icon/closeicon.png"
+      alt="close-icon"
+      class="w-5 h-5 hidden"
+      id="closeHam"
     />
     <div class="hidden lg:flex">
       <ul class="flex justify-center items-center gap-8">
@@ -26,8 +33,86 @@
         alt="global-icon"
         class="w-6 h-6"
       />
-      <a href="#" class="body3 text-darkgray-3">Login</a>
+      <button id="openModal">
+        <a href="#" class="body3 text-darkgray-3">Login</a>
+      </button>
       <button class="sm-btn-primary hover:bg-primary-5">Sign up</button>
     </div>
   </div>
 </header>
+
+<!--hamburger-->
+<div id="hamBackdrop" class="hidden bg-white bg-opacity-0 z-50 w-full">
+  <div class="w-full p-6 bg-desktop">
+    <ul class="py-8 sm:flex sm:flex-col sm:justify-center sm:items-center">
+      <li class="mb-8">
+        <a href="#" class="text-darkgray-3 hover:text-primary-6"
+          >Pre-made Pack List</a
+        >
+      </li>
+      <li class="mb-8">
+        <a href="#" class="mb-8 text-darkgray-3 hover:text-primary-6"
+          >Getaway Ideas</a
+        >
+      </li>
+      <li class="mb-8">
+        <a href="#" class="mb-8 text-darkgray-3 hover:text-primary-6"
+          >Custom Travel Kit</a
+        >
+      </li>
+      <li class="mb-8">
+        <a href="#" class="mb-8 text-darkgray-3 hover:text-primary-6"
+          >Regional settings</a
+        >
+      </li>
+    </ul>
+    <div
+      class="my-8 w-full sm:flex sm:flex-col sm:justify-center sm:items-center"
+    >
+      <button
+        class="sm-btn-secondary w-full mb-6 text-base hover:bg-primary-6 hover:text-white sm:w-1/2"
+      >
+        <a href="#">Sign up</a>
+      </button>
+      <button
+        class="sm-btn-secondary w-full text-base hover:bg-primary-6 hover:text-white sm:w-1/2"
+      >
+        <a href="#">Login</a>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--model backdrop-->
+<div
+  id="modalBackdrop"
+  class="hidden fixed bg-black bg-opacity-50 z-50 inset-0 flex justify-center items-center w-full"
+>
+  <!--model content-->
+  <div class="bg-white p-6 rounded-32lg drop-shadow-normal">
+    <div class="flex justify-between items-center py-6">
+      <h3 class="text-primary-6">Login</h3>
+      <a href="#" id="closeModal"
+        ><img src="/assets/images/icon/closeicon.png" alt="close icon"
+      /></a>
+    </div>
+    <form action="">
+      <div class="mb-4">
+        <label for="account" class="text-darkgray-3 block">Account</label>
+        <input type="text" id="account" placeholder="Enter your Email" />
+      </div>
+      <div class="mb-2">
+        <label for="password" class="text-darkgray-3 block">Password</label>
+        <input type="text" id="password" placeholder="Enter your password" />
+      </div>
+      <div class="flex justify-end items-center">
+        <a href="#" class="text-xs text-red-600">Forget the password</a>
+      </div>
+      <div class="flex justify-center mt-6">
+        <button class="sm-btn-primary w-full hover:bg-primary-5">
+          <a href="#">Login</a>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

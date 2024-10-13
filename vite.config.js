@@ -31,6 +31,7 @@ export default defineConfig({
     liveReload([
       "./layout/header.ejs",
       "./layout/footer.ejs",
+      "./layout/form.ejs",
       "./pages/index.html",
     ]),
     ViteEjsPlugin(),
